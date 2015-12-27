@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     NSLog(@"牛逼项目");
+    
+    
+    NSLog(@"提交测试");
     //开启日志
     [self startLogger];
     
