@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "720217145D01FD3BEC213CA12971B90AFF77A119",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CB475F470534D8F2D0EF31A9A227A1EBDE4CC621",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "3d598fef-304e-46d8-940e-79c4e810d450++9048" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CB475F470534D8F2D0EF31A9A227A1EBDE4CC621" : 0,
     "3d598fef-304e-46d8-940e-79c4e810d450++9048" : 0,
     "720217145D01FD3BEC213CA12971B90AFF77A119" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "240F3A6E-57DF-479D-BD15-D7354BE2B8FC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CB475F470534D8F2D0EF31A9A227A1EBDE4CC621" : "suning\/",
     "3d598fef-304e-46d8-940e-79c4e810d450++9048" : "ShoppingProject\/ShoppingProject\/Classes\/ThirdPart\/SNFoundation\/",
     "720217145D01FD3BEC213CA12971B90AFF77A119" : "ShoppingProject\/"
   },
@@ -27,6 +29,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/qq1003580893\/ShoppingProject.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "720217145D01FD3BEC213CA12971B90AFF77A119"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ghghghh\/suning.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB475F470534D8F2D0EF31A9A227A1EBDE4CC621"
     }
   ]
 }
