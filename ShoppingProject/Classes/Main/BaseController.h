@@ -1,17 +1,13 @@
 //
-//  TabBarController.h
+//  BaseController.h
 //  ShoppingProject
 //
-//  Created by 粤峰 on 15/12/23.
+//  Created by stvenfor on 15/12/28.
 //  Copyright © 2015年 郑永能. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TabBarController : UITabBarController
-
-
-
-
+@interface BaseController : UIViewController
 
 @end

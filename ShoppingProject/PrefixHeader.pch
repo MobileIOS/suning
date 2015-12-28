@@ -9,7 +9,12 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 
+#import "Notifacations.h"
+#import "AppUIDefine.h"
 
+#import "ManagerCallBack.h"
+#import "HttpCallBack.h"
+#import "ManagerEvent.h"
 
 
 

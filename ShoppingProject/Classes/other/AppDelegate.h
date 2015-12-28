@@ -13,16 +13,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-//底部tabbar
-@property (nonatomic, readonly, strong) TabBarController *tabBarViewController;
-
-//获取到当前的AppDelegate
-+ (instancetype)shareInstance;
-
-#if kPanUISwitch
-@property (strong, nonatomic) ScreenShotView *screenshotView;
-#endif
-
 
 @end
 
