@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ScreenShotView.h"
+
 #import "TabBarController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
