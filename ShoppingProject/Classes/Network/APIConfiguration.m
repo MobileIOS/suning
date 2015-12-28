@@ -20,7 +20,7 @@
    //提供接口访问
 #ifdef DEBUG
     //Test 环境
-    self.domain = @"";
+    self.domain = @"http://api.m.suning.com/";
 #else
     //正式环境
     self.domain = @"";

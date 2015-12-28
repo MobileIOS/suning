@@ -902,6 +902,9 @@
 		F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF691C30DB9E00510491 /* ManagerEvent.m */; };
 		F7A5EF6D1C30DBD400510491 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF6C1C30DBD400510491 /* AccountManager.m */; };
 		F7A5EF701C30DDBE00510491 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF6F1C30DDBE00510491 /* AccountModel.m */; };
+		F7A5EF741C30FED300510491 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF731C30FED300510491 /* SignInController.m */; };
+		F7A5EF771C31052A00510491 /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF761C31052A00510491 /* DefaultViewController.m */; };
+		F7A5EF7A1C31054A00510491 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF791C31054A00510491 /* SignUpController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1849,6 +1852,12 @@
 		F7A5EF6C1C30DBD400510491 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
 		F7A5EF6E1C30DDBE00510491 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
 		F7A5EF6F1C30DDBE00510491 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		F7A5EF721C30FED300510491 /* SignInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInController.h; sourceTree = "<group>"; };
+		F7A5EF731C30FED300510491 /* SignInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInController.m; sourceTree = "<group>"; };
+		F7A5EF751C31052A00510491 /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		F7A5EF761C31052A00510491 /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		F7A5EF781C31054A00510491 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		F7A5EF791C31054A00510491 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1983,6 +1992,7 @@
 				F7A5EF051C30C56F00510491 /* Categories（类目） */,
 				F7A5EF131C30C56F00510491 /* shopCart（购物车） */,
 				F7A5EF0C1C30C56F00510491 /* Mine（我的易购） */,
+				F7A5EF711C30FE7700510491 /* Account */,
 				F7A5EF0B1C30C56F00510491 /* Main */,
 				F7A5EF0F1C30C56F00510491 /* other */,
 			);
@@ -3217,6 +3227,19 @@
 			path = viewModel;
 			sourceTree = "<group>";
 		};
+		F7A5EF711C30FE7700510491 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F7A5EF721C30FED300510491 /* SignInController.h */,
+				F7A5EF731C30FED300510491 /* SignInController.m */,
+				F7A5EF781C31054A00510491 /* SignUpController.h */,
+				F7A5EF791C31054A00510491 /* SignUpController.m */,
+				F7A5EF751C31052A00510491 /* DefaultViewController.h */,
+				F7A5EF761C31052A00510491 /* DefaultViewController.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4268,7 +4291,9 @@
 			files = (
 				F7A5EF3E1C30CF6F00510491 /* CategoriesController.m in Sources */,
 				F7A5EF361C30CF1700510491 /* BaseController.m in Sources */,
+				F7A5EF741C30FED300510491 /* SignInController.m in Sources */,
 				F7A5EF231C30C7F400510491 /* TabBarController.m in Sources */,
+				F7A5EF771C31052A00510491 /* DefaultViewController.m in Sources */,
 				F7A5EF391C30CF4200510491 /* SearchController.m in Sources */,
 				F7A5EF531C30DA1700510491 /* UserSetting.m in Sources */,
 				F7A5EF701C30DDBE00510491 /* AccountModel.m in Sources */,
@@ -4283,6 +4308,7 @@
 				F7A5EF5E1C30DB0400510491 /* HttpCallBack.m in Sources */,
 				F7A5EF611C30DB1A00510491 /* HTTPFacade.m in Sources */,
 				F7A5EF431C30CF8E00510491 /* ShopCartController.m in Sources */,
+				F7A5EF7A1C31054A00510491 /* SignUpController.m in Sources */,
 				F7A5EF5B1C30DAE300510491 /* APIConfiguration.m in Sources */,
 				F7A5EF6D1C30DBD400510491 /* AccountManager.m in Sources */,
 			);
