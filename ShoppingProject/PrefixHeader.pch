@@ -16,7 +16,9 @@
 #import "HttpCallBack.h"
 #import "ManagerEvent.h"
 
-
+#import "AppUIDefine.h"
+#import "UIDefine.h"
+#import "ManagerEvent.h"
 
 #endif
 

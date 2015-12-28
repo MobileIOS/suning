@@ -39,14 +39,14 @@
 - (void)addChildViewControllers
 {
     // 首页
-    self.homeVC = (HomeController *)[self addChildVCWithSBName:@"HomeController" title:@"首页" norImageName:@"tabbar_home_unselect" selectedImageName:@"tabbar_home_selected"];
+    self.homeVC = (HomeController *)[self addChildVCWithSBName:@"HomeController" title:@"首页" norImageName:@"tab_home" selectedImageName:@"tab_home_on"];
     self.currentSelectedVc = self.homeVC;
     
     // 搜索
     self.searchVC = (SearchController *)[self addChildVCWithSBName:@"SearchController" title:@"搜索" norImageName:@"tab_message" selectedImageName:@"tab_message_on"];
     
     // 类目
-    self.categoriesVC = (CategoriesController *)[self addChildVCWithSBName:@"CategoriesController" title:@"类目" norImageName:@"tab_message" selectedImageName:@"tab_message_on"];
+    self.categoriesVC = (CategoriesController *)[self addChildVCWithSBName:@"CategoriesController" title:@"类目" norImageName:@"tab_home" selectedImageName:@"tab_home_on"];
     
     // 购物车
     self.shopCartVC = (ShopCartController *)[self addChildVCWithSBName:@"ShopCartController" title:@"购物车" norImageName:@"tab_message" selectedImageName:@"tab_message_on"];
