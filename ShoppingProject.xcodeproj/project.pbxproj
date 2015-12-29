@@ -878,6 +878,10 @@
 		D3A9FABA1C21ADC40079DBD4 /* 易付宝协议.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3A9F7551C21ADC40079DBD4 /* 易付宝协议.txt */; };
 		D3A9FABB1C21ADC40079DBD4 /* 苏宁广告联盟在线协议.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3A9F7561C21ADC40079DBD4 /* 苏宁广告联盟在线协议.txt */; };
 		D3A9FABC1C21ADC40079DBD4 /* 苏宁易购会员章程.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3A9F7571C21ADC40079DBD4 /* 苏宁易购会员章程.txt */; };
+		F77F5C771C3212E5008D3AA9 /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F5C721C3212E5008D3AA9 /* DefaultViewController.m */; };
+		F77F5C781C3212E5008D3AA9 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F5C741C3212E5008D3AA9 /* SignInController.m */; };
+		F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F5C761C3212E5008D3AA9 /* SignUpController.m */; };
+		F77F5C7E1C321336008D3AA9 /* DefaultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */; };
 		F7A5EF201C30C7E500510491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF1F1C30C7E500510491 /* AppDelegate.m */; };
 		F7A5EF231C30C7F400510491 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF221C30C7F400510491 /* TabBarController.m */; };
 		F7A5EF251C30CA5000510491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF241C30CA5000510491 /* Main.storyboard */; };
@@ -902,9 +906,6 @@
 		F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF691C30DB9E00510491 /* ManagerEvent.m */; };
 		F7A5EF6D1C30DBD400510491 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF6C1C30DBD400510491 /* AccountManager.m */; };
 		F7A5EF701C30DDBE00510491 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF6F1C30DDBE00510491 /* AccountModel.m */; };
-		F7A5EF741C30FED300510491 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF731C30FED300510491 /* SignInController.m */; };
-		F7A5EF771C31052A00510491 /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF761C31052A00510491 /* DefaultViewController.m */; };
-		F7A5EF7A1C31054A00510491 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF791C31054A00510491 /* SignUpController.m */; };
 		F7A5EF881C31162B00510491 /* tab_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF7C1C31162B00510491 /* tab_home@2x.png */; };
 		F7A5EF891C31162B00510491 /* tab_home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF7D1C31162B00510491 /* tab_home@3x.png */; };
 		F7A5EF8A1C31162B00510491 /* tab_home_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF7E1C31162B00510491 /* tab_home_on@2x.png */; };
@@ -1820,6 +1821,13 @@
 		D3A9F7551C21ADC40079DBD4 /* 易付宝协议.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "易付宝协议.txt"; sourceTree = "<group>"; };
 		D3A9F7561C21ADC40079DBD4 /* 苏宁广告联盟在线协议.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "苏宁广告联盟在线协议.txt"; sourceTree = "<group>"; };
 		D3A9F7571C21ADC40079DBD4 /* 苏宁易购会员章程.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "苏宁易购会员章程.txt"; sourceTree = "<group>"; };
+		F77F5C711C3212E5008D3AA9 /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		F77F5C721C3212E5008D3AA9 /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		F77F5C731C3212E5008D3AA9 /* SignInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInController.h; sourceTree = "<group>"; };
+		F77F5C741C3212E5008D3AA9 /* SignInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInController.m; sourceTree = "<group>"; };
+		F77F5C751C3212E5008D3AA9 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		F77F5C761C3212E5008D3AA9 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
+		F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DefaultViewController.storyboard; sourceTree = "<group>"; };
 		F7A5EF1E1C30C7E500510491 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7A5EF1F1C30C7E500510491 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7A5EF211C30C7F400510491 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -1865,12 +1873,6 @@
 		F7A5EF6C1C30DBD400510491 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
 		F7A5EF6E1C30DDBE00510491 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
 		F7A5EF6F1C30DDBE00510491 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
-		F7A5EF721C30FED300510491 /* SignInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInController.h; sourceTree = "<group>"; };
-		F7A5EF731C30FED300510491 /* SignInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInController.m; sourceTree = "<group>"; };
-		F7A5EF751C31052A00510491 /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
-		F7A5EF761C31052A00510491 /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
-		F7A5EF781C31054A00510491 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
-		F7A5EF791C31054A00510491 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
 		F7A5EF7C1C31162B00510491 /* tab_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_home@2x.png"; sourceTree = "<group>"; };
 		F7A5EF7D1C31162B00510491 /* tab_home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_home@3x.png"; sourceTree = "<group>"; };
 		F7A5EF7E1C31162B00510491 /* tab_home_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_home_on@2x.png"; sourceTree = "<group>"; };
@@ -3027,6 +3029,27 @@
 			path = Txt;
 			sourceTree = "<group>";
 		};
+		F77F5C701C3212E5008D3AA9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77F5C711C3212E5008D3AA9 /* DefaultViewController.h */,
+				F77F5C721C3212E5008D3AA9 /* DefaultViewController.m */,
+				F77F5C731C3212E5008D3AA9 /* SignInController.h */,
+				F77F5C741C3212E5008D3AA9 /* SignInController.m */,
+				F77F5C751C3212E5008D3AA9 /* SignUpController.h */,
+				F77F5C761C3212E5008D3AA9 /* SignUpController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F77F5C7A1C3212EE008D3AA9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F7A5EF051C30C56F00510491 /* Categories（类目） */ = {
 			isa = PBXGroup;
 			children = (
@@ -3263,12 +3286,8 @@
 		F7A5EF711C30FE7700510491 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				F7A5EF721C30FED300510491 /* SignInController.h */,
-				F7A5EF731C30FED300510491 /* SignInController.m */,
-				F7A5EF781C31054A00510491 /* SignUpController.h */,
-				F7A5EF791C31054A00510491 /* SignUpController.m */,
-				F7A5EF751C31052A00510491 /* DefaultViewController.h */,
-				F7A5EF761C31052A00510491 /* DefaultViewController.m */,
+				F77F5C701C3212E5008D3AA9 /* controller */,
+				F77F5C7A1C3212EE008D3AA9 /* view */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -3571,6 +3590,7 @@
 				D3A9FA401C21ADC40079DBD4 /* segment_vertical_line.png in Resources */,
 				D3A9F83A1C21ADC40079DBD4 /* pay_button_setGray@2x.png in Resources */,
 				D3A9FABB1C21ADC40079DBD4 /* 苏宁广告联盟在线协议.txt in Resources */,
+				F77F5C7E1C321336008D3AA9 /* DefaultViewController.storyboard in Resources */,
 				D3A9F9FC1C21ADC40079DBD4 /* Animation-1@2x.png in Resources */,
 				D3A9F8021C21ADC40079DBD4 /* lotteryHelp@2x.png in Resources */,
 				D3A9F8CE1C21ADC40079DBD4 /* btn_delete_gray@2x.png in Resources */,
@@ -4363,16 +4383,17 @@
 			files = (
 				F7A5EF3E1C30CF6F00510491 /* CategoriesController.m in Sources */,
 				F7A5EF361C30CF1700510491 /* BaseController.m in Sources */,
-				F7A5EF741C30FED300510491 /* SignInController.m in Sources */,
 				F7A5EF231C30C7F400510491 /* TabBarController.m in Sources */,
-				F7A5EF771C31052A00510491 /* DefaultViewController.m in Sources */,
 				F7A5EF391C30CF4200510491 /* SearchController.m in Sources */,
+				F77F5C771C3212E5008D3AA9 /* DefaultViewController.m in Sources */,
 				F7A5EF531C30DA1700510491 /* UserSetting.m in Sources */,
 				F7A5EF701C30DDBE00510491 /* AccountModel.m in Sources */,
 				F7A5EF201C30C7E500510491 /* AppDelegate.m in Sources */,
 				D3A9F3AF1C219C420079DBD4 /* main.m in Sources */,
+				F77F5C781C3212E5008D3AA9 /* SignInController.m in Sources */,
 				F7A5EF9B1C311C5B00510491 /* PageModel.m in Sources */,
 				F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */,
+				F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */,
 				F7A5EF481C30CFB400510491 /* MineController.m in Sources */,
 				F7A5EF671C30DB8300510491 /* ManagerCallBack.m in Sources */,
 				F7A5EF4D1C30D0B400510491 /* HomeController.m in Sources */,
@@ -4381,7 +4402,6 @@
 				F7A5EF5E1C30DB0400510491 /* HttpCallBack.m in Sources */,
 				F7A5EF611C30DB1A00510491 /* HTTPFacade.m in Sources */,
 				F7A5EF431C30CF8E00510491 /* ShopCartController.m in Sources */,
-				F7A5EF7A1C31054A00510491 /* SignUpController.m in Sources */,
 				F7A5EF5B1C30DAE300510491 /* APIConfiguration.m in Sources */,
 				F7A5EF6D1C30DBD400510491 /* AccountManager.m in Sources */,
 			);

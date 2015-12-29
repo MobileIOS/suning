@@ -15,8 +15,9 @@
  *  baseUrl
  */
 @property (nonatomic, strong) NSString *domain;
-
+@property (nonatomic, strong) NSString *login;
 
 + (APIConfiguration *)sharedAPIConfiguration;
+
 
 @end

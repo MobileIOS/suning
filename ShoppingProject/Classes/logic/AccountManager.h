@@ -14,4 +14,6 @@
 @property(nonatomic,copy)AccountModel* account;
 
 +(AccountManager*) sharedAccountManager;
+
++(void)signIn:(AccountModel*)account callback:(ManagerCallBack*)callback;
 @end

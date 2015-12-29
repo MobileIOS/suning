@@ -20,13 +20,14 @@
    //提供接口访问
 #ifdef DEBUG
     //Test 环境
-    self.domain = @"http://api.m.suning.com/";
+    self.domain = @"";
 #else
     //正式环境
     self.domain = @"";
 #endif
     
     //拼接访问接口
+    self.login = [self APIUrlWithPath:@"login"];
     
     
 }

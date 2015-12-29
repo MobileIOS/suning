@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AccountModel.h"
 
 static NSString *HTTP_HEADER_CLIENT_OS;
 static NSString *HTTP_HEADER_VERSION_NAME;
@@ -17,7 +18,7 @@ static NSString *HTTP_HEADER_VERSION_CODE;
 //封装默认参数
 +(NSDictionary*)defaultParameter;
 
-
++ (NSUInteger)signIn:(AccountModel*)account callback:(HttpCallBack *)callback;
 
 
 @end

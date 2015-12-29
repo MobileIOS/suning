@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 #import "TabBarController.h"
+#import "AccountManager.h"
+#import "AccountModel.h"
+#import "DefaultViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,8 +21,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+ 
     self.window.rootViewController = [[TabBarController alloc]init];
+    
+    if (2>1) {
+        self.window.rootViewController = [UIStoryboard storyboardWithName:@"DefaultViewController" bundle:nil].instantiateInitialViewController;
+    }else{
+        self.window.rootViewController = [[TabBarController alloc]init];
+    }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

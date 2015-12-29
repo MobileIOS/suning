@@ -11,6 +11,7 @@
 #import "AccountManager.h"
 #import "HttpCallBack.h"
 #import "AFNetworking.h"
+#import "APIConfiguration.h"
 
 
 @implementation HTTPFacade
@@ -99,5 +100,22 @@
     
     return tag;
 }
+
+//signin
++ (NSUInteger)signIn:(AccountModel*)account callback:(HttpCallBack *)callback
+{
+    NSUInteger tag = 0;
+    
+    NSString* url = [APIConfiguration sharedAPIConfiguration].login;
+    //    NSString* name = [account.username stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary* parameter = nil;
+    parameter = @{@"mobile" : account.mobile,
+                  @"password" : account.password,
+                  };
+    tag = [self post:url parameter:parameter callback:callback];
+    
+    return tag;
+}
+
 
 @end
