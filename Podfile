@@ -14,4 +14,4 @@
        pod 'FMDB'
        pod 'CocoaLumberjack', '~> 1.9.2'
        pod 'SDAutoLayout'
-        
+         pod 'Masonry'        

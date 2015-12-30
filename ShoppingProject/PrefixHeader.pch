@@ -21,6 +21,6 @@
 #import "ManagerEvent.h"
 
 #import "MJExtension.h"
-
+#import "Masonry.h"
 #endif
 

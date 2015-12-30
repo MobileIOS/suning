@@ -20,8 +20,8 @@
     
     
     HttpCallBack* http = [ManagerUtil defaultHttpCallBack:callback process:^id(NSDictionary* dict){
-        NSLog(@"--->%@",dict);
-        DrugListResultModel* model = [DrugListResultModel mj_objectWithKeyValues:dict];
+//        NSLog(@"--->%@",dict);
+        DrugListResultModel* model = [DrugListResultModel mj_objectWithKeyValues:dict[@"result"]];
        
         NSMutableArray* list = nil;
         if (model) {

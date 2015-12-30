@@ -22,11 +22,7 @@
             NSDictionary* dict = (NSDictionary*)result;
             NSInteger code = [dict[@"error_code"] integerValue];
             if (code == 0) {
-                
-                NSMutableDictionary *dict1 = [NSMutableDictionary dictionaryWithDictionary:dict];
-                [dict1 removeObjectForKey:@"error_code"];
-                [dict1 removeObjectForKey:@"reason"];
-                id processResult = processBlock(dict1);
+            id processResult = processBlock(dict);
                 callback.updateBlock(processResult);
                 
             }
