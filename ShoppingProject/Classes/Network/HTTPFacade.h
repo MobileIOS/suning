@@ -19,6 +19,7 @@ static NSString *HTTP_HEADER_VERSION_CODE;
 +(NSDictionary*)defaultParameter;
 
 + (NSUInteger)signIn:(AccountModel*)account callback:(HttpCallBack *)callback;
-
+//请求药品列表
++ (NSUInteger)key:(NSString*)key callback:(HttpCallBack *)callback;
 
 @end

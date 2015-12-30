@@ -54,10 +54,10 @@
     NSUInteger tag = 0;
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     NSMutableDictionary* para = [ NSMutableDictionary dictionary];
-    [para addEntriesFromDictionary:[self defaultParameter]];
+//    [para addEntriesFromDictionary:[self defaultParameter]];
     if (parameter) {
         [para addEntriesFromDictionary:parameter];
     }
@@ -66,6 +66,7 @@
                   parameters:para
                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
                          callback.doneBlock(responseObject);
+                         
                      }
                      failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                          NSLog(@"Error: %@", error);
@@ -83,7 +84,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 
     NSMutableDictionary* para = [ NSMutableDictionary dictionary];
-    [para addEntriesFromDictionary:[self defaultParameter]];
+//    [para addEntriesFromDictionary:[self defaultParameter]];
     if (parameter) {
         [para addEntriesFromDictionary:parameter];
     }
@@ -117,5 +118,19 @@
     return tag;
 }
 
+
++ (NSUInteger)key:(NSString*)key callback:(HttpCallBack *)callback{
+    NSUInteger tag = 0;
+    
+    NSString* url = [APIConfiguration sharedAPIConfiguration].druglistUrl;
+    //    NSString* name = [account.username stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary* parameter = nil;
+    parameter = @{
+                  @"key" : key
+                  };
+    tag = [self get:url parameter:parameter callback:callback];
+    
+    return tag;
+}
 
 @end

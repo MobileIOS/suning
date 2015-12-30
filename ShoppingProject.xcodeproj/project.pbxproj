@@ -919,6 +919,11 @@
 		F7A5EF921C31162B00510491 /* tab_mine_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF861C31162B00510491 /* tab_mine_on@2x.png */; };
 		F7A5EF931C31162B00510491 /* tab_mine_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF871C31162B00510491 /* tab_mine_on@3x.png */; };
 		F7A5EF9B1C311C5B00510491 /* PageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF9A1C311C5B00510491 /* PageModel.m */; };
+		F7CFDC811C33C86500F0E648 /* DrugListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC801C33C86500F0E648 /* DrugListModel.m */; };
+		F7CFDC841C33C8A400F0E648 /* DrugListResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC831C33C8A400F0E648 /* DrugListResultModel.m */; };
+		F7CFDC871C33CE7100F0E648 /* ProjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC861C33CE7100F0E648 /* ProjectManager.m */; };
+		F7CFDC8A1C33DBA300F0E648 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC891C33DBA300F0E648 /* NSArray+Log.m */; };
+		F7CFDC8D1C33DE2000F0E648 /* BaseResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1888,6 +1893,16 @@
 		F7A5EF941C3118D100510491 /* UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDefine.h; sourceTree = "<group>"; };
 		F7A5EF991C311C5B00510491 /* PageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageModel.h; sourceTree = "<group>"; };
 		F7A5EF9A1C311C5B00510491 /* PageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageModel.m; sourceTree = "<group>"; };
+		F7CFDC7F1C33C86500F0E648 /* DrugListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugListModel.h; sourceTree = "<group>"; };
+		F7CFDC801C33C86500F0E648 /* DrugListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugListModel.m; sourceTree = "<group>"; };
+		F7CFDC821C33C8A400F0E648 /* DrugListResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugListResultModel.h; sourceTree = "<group>"; };
+		F7CFDC831C33C8A400F0E648 /* DrugListResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugListResultModel.m; sourceTree = "<group>"; };
+		F7CFDC851C33CE7100F0E648 /* ProjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectManager.h; sourceTree = "<group>"; };
+		F7CFDC861C33CE7100F0E648 /* ProjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectManager.m; sourceTree = "<group>"; };
+		F7CFDC881C33DBA300F0E648 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		F7CFDC891C33DBA300F0E648 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		F7CFDC8B1C33DE2000F0E648 /* BaseResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResultModel.h; sourceTree = "<group>"; };
+		F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResultModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3241,6 +3256,8 @@
 				F7A5EF691C30DB9E00510491 /* ManagerEvent.m */,
 				F7A5EF6B1C30DBD400510491 /* AccountManager.h */,
 				F7A5EF6C1C30DBD400510491 /* AccountManager.m */,
+				F7CFDC851C33CE7100F0E648 /* ProjectManager.h */,
+				F7CFDC861C33CE7100F0E648 /* ProjectManager.m */,
 			);
 			path = logic;
 			sourceTree = "<group>";
@@ -3252,6 +3269,8 @@
 				F7A5EF6F1C30DDBE00510491 /* AccountModel.m */,
 				F7A5EF991C311C5B00510491 /* PageModel.h */,
 				F7A5EF9A1C311C5B00510491 /* PageModel.m */,
+				F7CFDC7F1C33C86500F0E648 /* DrugListModel.h */,
+				F7CFDC801C33C86500F0E648 /* DrugListModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -3272,6 +3291,8 @@
 		F7A5EF1C1C30C69700510491 /* until */ = {
 			isa = PBXGroup;
 			children = (
+				F7CFDC881C33DBA300F0E648 /* NSArray+Log.h */,
+				F7CFDC891C33DBA300F0E648 /* NSArray+Log.m */,
 			);
 			path = until;
 			sourceTree = "<group>";
@@ -3314,6 +3335,10 @@
 		F7A5EF981C311C0F00510491 /* ResultModel */ = {
 			isa = PBXGroup;
 			children = (
+				F7CFDC821C33C8A400F0E648 /* DrugListResultModel.h */,
+				F7CFDC831C33C8A400F0E648 /* DrugListResultModel.m */,
+				F7CFDC8B1C33DE2000F0E648 /* BaseResultModel.h */,
+				F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */,
 			);
 			name = ResultModel;
 			path = viewModel/ResultModel;
@@ -4381,6 +4406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CFDC8A1C33DBA300F0E648 /* NSArray+Log.m in Sources */,
 				F7A5EF3E1C30CF6F00510491 /* CategoriesController.m in Sources */,
 				F7A5EF361C30CF1700510491 /* BaseController.m in Sources */,
 				F7A5EF231C30C7F400510491 /* TabBarController.m in Sources */,
@@ -4389,19 +4415,23 @@
 				F7A5EF531C30DA1700510491 /* UserSetting.m in Sources */,
 				F7A5EF701C30DDBE00510491 /* AccountModel.m in Sources */,
 				F7A5EF201C30C7E500510491 /* AppDelegate.m in Sources */,
+				F7CFDC841C33C8A400F0E648 /* DrugListResultModel.m in Sources */,
 				D3A9F3AF1C219C420079DBD4 /* main.m in Sources */,
 				F77F5C781C3212E5008D3AA9 /* SignInController.m in Sources */,
 				F7A5EF9B1C311C5B00510491 /* PageModel.m in Sources */,
 				F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */,
 				F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */,
+				F7CFDC8D1C33DE2000F0E648 /* BaseResultModel.m in Sources */,
 				F7A5EF481C30CFB400510491 /* MineController.m in Sources */,
 				F7A5EF671C30DB8300510491 /* ManagerCallBack.m in Sources */,
 				F7A5EF4D1C30D0B400510491 /* HomeController.m in Sources */,
 				F7A5EF501C30D9FF00510491 /* AppSetting.m in Sources */,
+				F7CFDC811C33C86500F0E648 /* DrugListModel.m in Sources */,
 				F7A5EF641C30DB5C00510491 /* ManagerUtil.m in Sources */,
 				F7A5EF5E1C30DB0400510491 /* HttpCallBack.m in Sources */,
 				F7A5EF611C30DB1A00510491 /* HTTPFacade.m in Sources */,
 				F7A5EF431C30CF8E00510491 /* ShopCartController.m in Sources */,
+				F7CFDC871C33CE7100F0E648 /* ProjectManager.m in Sources */,
 				F7A5EF5B1C30DAE300510491 /* APIConfiguration.m in Sources */,
 				F7A5EF6D1C30DBD400510491 /* AccountManager.m in Sources */,
 			);

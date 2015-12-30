@@ -17,6 +17,9 @@
 @property (nonatomic, strong) NSString *domain;
 @property (nonatomic, strong) NSString *login;
 
+@property (nonatomic, strong) NSString *druglistUrl;
+
+
 + (APIConfiguration *)sharedAPIConfiguration;
 
 

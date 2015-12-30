@@ -20,15 +20,16 @@
    //提供接口访问
 #ifdef DEBUG
     //Test 环境
-    self.domain = @"";
+    self.domain = @"http://api2.juheapi.com";
 #else
     //正式环境
-    self.domain = @"";
+    self.domain = @"http://api2.juheapi.com";
 #endif
     
     //拼接访问接口
     self.login = [self APIUrlWithPath:@"login"];
     
+    self.druglistUrl = [self APIUrlWithPath:@"/medicine/list"];
     
 }
 

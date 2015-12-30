@@ -15,4 +15,6 @@
 #define COLOR_ALERT_SUCCESS UI_COLOR(0x3a, 0xad, 0x6c)
 #define COLOR_ALERT_ERROR   UI_COLOR(238, 76, 106)
 
+
+
 #endif /* AppUIDefine_h */

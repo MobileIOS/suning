@@ -20,10 +20,13 @@
     http.doneBlock = ^(id result){
         if ([result isKindOfClass:[NSDictionary class]]) {
             NSDictionary* dict = (NSDictionary*)result;
-            NSInteger code = [dict[@"errno"] integerValue];
+            NSInteger code = [dict[@"error_code"] integerValue];
             if (code == 0) {
                 
-                id processResult = processBlock(dict);
+                NSMutableDictionary *dict1 = [NSMutableDictionary dictionaryWithDictionary:dict];
+                [dict1 removeObjectForKey:@"error_code"];
+                [dict1 removeObjectForKey:@"reason"];
+                id processResult = processBlock(dict1);
                 callback.updateBlock(processResult);
                 
             }

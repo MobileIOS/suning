@@ -27,7 +27,7 @@
  
     self.window.rootViewController = [[TabBarController alloc]init];
     
-    if (2>1) {
+    if (1>2) {
         self.window.rootViewController = [UIStoryboard storyboardWithName:@"DefaultViewController" bundle:nil].instantiateInitialViewController;
     }else{
         self.window.rootViewController = [[TabBarController alloc]init];

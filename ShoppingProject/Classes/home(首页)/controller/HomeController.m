@@ -7,6 +7,10 @@
 //
 
 #import "HomeController.h"
+#import "HTTPFacade.h"
+#import "ProjectManager.h"
+
+NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
 
 @interface HomeController ()
 
@@ -16,7 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    ManagerCallBack *callback = [[ManagerCallBack alloc]init];
+    callback.updateBlock = ^(id result){
+        NSLog(@"----->%@",result);
+    };
+    
+    [ProjectManager key:keyString callback:callback];
+
 }
 
 - (void)didReceiveMemoryWarning {

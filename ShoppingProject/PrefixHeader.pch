@@ -20,5 +20,7 @@
 #import "UIDefine.h"
 #import "ManagerEvent.h"
 
+#import "MJExtension.h"
+
 #endif
 
