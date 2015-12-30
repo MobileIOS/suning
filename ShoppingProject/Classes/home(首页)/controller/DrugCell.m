@@ -19,10 +19,8 @@
 
 @implementation DrugCell
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setup];
     }
     return self;
@@ -47,7 +45,7 @@
     label.font = [UIFont systemFontOfSize:14];
 
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(imageView).offset(10);
+        make.leading.equalTo(imageView).offset(10);
         make.top.equalTo(imageView);
         
     }];

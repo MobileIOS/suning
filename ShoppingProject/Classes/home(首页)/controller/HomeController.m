@@ -59,6 +59,7 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
         cell = [[DrugCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"drugCell"];
     }
     DrugListModel *drugModel = self.tableData[indexPath.row];
+    
     cell.drugModel = drugModel;
     return cell;
 }
