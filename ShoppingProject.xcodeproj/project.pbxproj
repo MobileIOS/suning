@@ -923,7 +923,6 @@
 		F7CFDC841C33C8A400F0E648 /* DrugListResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC831C33C8A400F0E648 /* DrugListResultModel.m */; };
 		F7CFDC871C33CE7100F0E648 /* ProjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC861C33CE7100F0E648 /* ProjectManager.m */; };
 		F7CFDC8A1C33DBA300F0E648 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC891C33DBA300F0E648 /* NSArray+Log.m */; };
-		F7CFDC8D1C33DE2000F0E648 /* BaseResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */; };
 		FF060ADA1C340C2A00B32C72 /* DrugCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF060AD91C340C2A00B32C72 /* DrugCell.m */; };
 /* End PBXBuildFile section */
 
@@ -1902,8 +1901,6 @@
 		F7CFDC861C33CE7100F0E648 /* ProjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectManager.m; sourceTree = "<group>"; };
 		F7CFDC881C33DBA300F0E648 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		F7CFDC891C33DBA300F0E648 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		F7CFDC8B1C33DE2000F0E648 /* BaseResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResultModel.h; sourceTree = "<group>"; };
-		F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResultModel.m; sourceTree = "<group>"; };
 		FF060AD81C340C2A00B32C72 /* DrugCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugCell.h; sourceTree = "<group>"; };
 		FF060AD91C340C2A00B32C72 /* DrugCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -3342,8 +3339,6 @@
 			children = (
 				F7CFDC821C33C8A400F0E648 /* DrugListResultModel.h */,
 				F7CFDC831C33C8A400F0E648 /* DrugListResultModel.m */,
-				F7CFDC8B1C33DE2000F0E648 /* BaseResultModel.h */,
-				F7CFDC8C1C33DE2000F0E648 /* BaseResultModel.m */,
 			);
 			name = ResultModel;
 			path = viewModel/ResultModel;
@@ -4427,7 +4422,6 @@
 				FF060ADA1C340C2A00B32C72 /* DrugCell.m in Sources */,
 				F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */,
 				F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */,
-				F7CFDC8D1C33DE2000F0E648 /* BaseResultModel.m in Sources */,
 				F7A5EF481C30CFB400510491 /* MineController.m in Sources */,
 				F7A5EF671C30DB8300510491 /* ManagerCallBack.m in Sources */,
 				F7A5EF4D1C30D0B400510491 /* HomeController.m in Sources */,

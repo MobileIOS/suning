@@ -11,11 +11,13 @@
 #import "ProjectManager.h"
 #import "DrugCell.h"
 #import "DrugListModel.h"
+
 NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
 
 @interface HomeController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tabelView;
 @property(nonatomic,copy)NSArray *tableData;
+@property(nonatomic,assign)CGFloat hight;
 
 @end
 
@@ -24,6 +26,12 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
 - (void)viewDidLoad {
     [super viewDidLoad];
     ManagerCallBack *callback = [[ManagerCallBack alloc]init];
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    }
+    
     callback.updateBlock = ^(NSArray *result){
         
         self.tableData = result;
@@ -31,7 +39,7 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
         [self.tabelView reloadData];
     };
     self.view.backgroundColor = [UIColor grayColor];
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-self.tabBarController.tabBar.frame.size.height) style:UITableViewStylePlain];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-self.tabBarController.tabBar.frame.size.height) style:UITableViewStylePlain];
     self.tabelView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -59,9 +67,23 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
         cell = [[DrugCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"drugCell"];
     }
     DrugListModel *drugModel = self.tableData[indexPath.row];
-    
+     CGFloat hight =  [cell getCellHeight];
+
+   
     cell.drugModel = drugModel;
     return cell;
 }
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+   DrugCell *cell  = (DrugCell *)[tableView dequeueReusableCellWithIdentifier:@"drugCell"];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    return [cell getCellHeight];
+    
+}
+
+
+
 
 @end

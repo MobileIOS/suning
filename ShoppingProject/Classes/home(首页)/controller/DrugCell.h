@@ -12,5 +12,6 @@
 @property(nonatomic,strong)DrugListModel *drugModel;
 
 
+-(CGFloat)getCellHeight;
 
 @end

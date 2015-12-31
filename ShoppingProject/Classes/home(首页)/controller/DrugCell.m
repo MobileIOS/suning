@@ -12,7 +12,7 @@
 
 @property(nonatomic,strong)UIImageView *imgView;
 @property(nonatomic,strong)UILabel *descLabel;
-@property(nonatomic,strong)UILabel *lable;
+@property(nonatomic,strong)UILabel *mlable;
 
 
 @end
@@ -33,7 +33,7 @@
     [self addSubview:imageView];
     self.imgView = imageView;
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self).offset(10);
+        make.leading.top.equalTo(self).offset(10);
         make.width.height.equalTo(@40);
     }];
     
@@ -45,8 +45,23 @@
     label.font = [UIFont systemFontOfSize:14];
 
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(imageView).offset(10);
-        make.top.equalTo(imageView);
+        make.left.equalTo(imageView.mas_right).offset(10);
+        make.top.equalTo(imageView.mas_top);
+        
+    }];
+    
+    UILabel *mlabel = [[UILabel alloc]init];
+    self.mlable = mlabel;
+    [self addSubview:mlabel];
+    [mlabel sizeToFit];
+    mlabel.textAlignment = NSTextAlignmentLeft;
+    mlabel.font = [UIFont systemFontOfSize:12];
+    
+
+    
+    [mlabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.descLabel.mas_leading);
+        make.top.equalTo(self.descLabel.mas_bottom).offset(10);
         
     }];
     
@@ -55,8 +70,13 @@
 
 -(void)setDrugModel:(DrugListModel *)drugModel{
     _drugModel = drugModel;
+    
     self.descLabel.text = drugModel.factory;
+    if (!self.descLabel.text) {
+        self.descLabel.text = @"暂无数据";
+    }
     self.imgView.image = [UIImage imageNamed:@"Animation-10"];
+    self.mlable.text = drugModel.pizhun;
     
 }
 - (void)awakeFromNib {
@@ -67,6 +87,11 @@
     [super setSelected:selected animated:animated];
 
     
+}
+
+-(CGFloat)getCellHeight{
+    NSLog(@"%.f---->",CGRectGetMaxY(self.mlable.frame)+20);
+    return CGRectGetMaxY(self.mlable.frame)+20;
 }
 
 @end
