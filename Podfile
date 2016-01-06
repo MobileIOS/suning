@@ -14,4 +14,8 @@
        pod 'FMDB'
        pod 'CocoaLumberjack', '~> 1.9.2'
        pod 'SDAutoLayout'
-         pod 'Masonry'        
+        pod 'Masonry'
+
+    target :VVStackTests, :exclusive => true do
+    pod 'Kiwi'
+end
