@@ -46,14 +46,22 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
     [tableView setRowHeight:50];
     [self.view addSubview:tableView];
      [tableView registerClass:[DrugCell class] forCellReuseIdentifier:@"drugCell"];
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor redColor];
+    view.frame = CGRectMake(0, 0, SCREEN_WIDTH, 100);
+    tableView.tableHeaderView = view;
     
     [ProjectManager key:keyString callback:callback];
 
 }
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 5;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
    
     NSInteger count = 0;
-    count =  self.tableData.count;
+    count =  self.tableData.count-18;
 
     
     return count;
@@ -81,6 +89,24 @@ NSString *const keyString = @"6faf1c6432bdd68e6ed896917f807e2d";
     [cell updateConstraintsIfNeeded];
     return [cell getCellHeight];
     
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UIView *view = [UIView new];
+    view.frame = CGRectMake(0, 0, SCREEN_WIDTH, 20);
+    view.backgroundColor = [UIColor clearColor];
+    UILabel *lable = [UILabel new];
+    lable.text = [NSString stringWithFormat:@"第%tu组",section];
+    lable.text = @"fgag";
+    lable.backgroundColor = [UIColor redColor];
+    lable.font = [UIFont systemFontOfSize:12];
+    [view addSubview:lable];
+    return view;
+    
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
 }
 
 

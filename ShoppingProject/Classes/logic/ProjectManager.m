@@ -11,7 +11,9 @@
 #import "DrugListResultModel.h"
 #import "DrugListModel.h"
 #import "HTTPFacade.h"
-
+#import "DBHelper.h"
+#import "AccountManager.h"
+#import "commonDao.h"
 @implementation ProjectManager
 
 
@@ -20,7 +22,7 @@
     
     
     HttpCallBack* http = [ManagerUtil defaultHttpCallBack:callback process:^id(NSDictionary* dict){
-//        NSLog(@"--->%@",dict);
+
         DrugListResultModel* model = [DrugListResultModel mj_objectWithKeyValues:dict[@"result"]];
        
         NSMutableArray* list = nil;
@@ -29,11 +31,19 @@
             list = [NSMutableArray arrayWithCapacity:count];
             
             
-            
             for (DrugListModel* project in model.list) {
               
                 [list addObject:project];
             }
+            DBHelper *db = [DBHelper sharedService];
+            [db initDatabaseWith:@"dafa"];
+            
+            commonDao *dao = [[commonDao alloc]init];
+        
+          
+            
+            NSLog(@"%@---->%tu",list,list.count);
+            
         }
         return list;
     }];

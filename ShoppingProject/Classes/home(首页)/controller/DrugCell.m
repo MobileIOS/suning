@@ -90,8 +90,8 @@
 }
 
 -(CGFloat)getCellHeight{
-    NSLog(@"%.f---->",CGRectGetMaxY(self.mlable.frame)+20);
-    return CGRectGetMaxY(self.mlable.frame)+20;
+    return 100;
+    
 }
 
 @end

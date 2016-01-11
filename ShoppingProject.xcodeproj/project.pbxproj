@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2EF7A5973F6634C3FA9E1A5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7688197CA9A3F1A9BFD5E3 /* Pods.framework */; };
+		05322FE610F43DEC83204736 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCB341B51A86E7BD0F388B6 /* libPods.a */; };
 		D38E1A3F1C227D7F00C57481 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D38E1A3E1C227D7F00C57481 /* libz.tbd */; };
 		D3A915521C21B2090079DBD4 /* 水电煤缴费协议.html in Resources */ = {isa = PBXBuildFile; fileRef = D3A915511C21B2090079DBD4 /* 水电煤缴费协议.html */; };
 		D3A9F3AF1C219C420079DBD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A9F3AE1C219C420079DBD4 /* main.m */; };
@@ -882,6 +882,8 @@
 		F77F5C781C3212E5008D3AA9 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F5C741C3212E5008D3AA9 /* SignInController.m */; };
 		F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F5C761C3212E5008D3AA9 /* SignUpController.m */; };
 		F77F5C7E1C321336008D3AA9 /* DefaultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */; };
+		F79885FB1C3E308C00C0F870 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F79885FA1C3E308C00C0F870 /* DBHelper.m */; };
+		F79885FE1C3E33E200C0F870 /* commonDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F79885FD1C3E33E200C0F870 /* commonDao.m */; };
 		F7A5EF201C30C7E500510491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF1F1C30C7E500510491 /* AppDelegate.m */; };
 		F7A5EF231C30C7F400510491 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5EF221C30C7F400510491 /* TabBarController.m */; };
 		F7A5EF251C30CA5000510491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A5EF241C30CA5000510491 /* Main.storyboard */; };
@@ -944,9 +946,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CCB341B51A86E7BD0F388B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EFFDE246EB72C2074E7F32 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7AFADAADDA542D7F32CD8FA8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CF7688197CA9A3F1A9BFD5E3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38E1A051C227A4D00C57481 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D38E1A3E1C227D7F00C57481 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D3A915511C21B2090079DBD4 /* 水电煤缴费协议.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "水电煤缴费协议.html"; sourceTree = "<group>"; };
@@ -1833,6 +1835,10 @@
 		F77F5C751C3212E5008D3AA9 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
 		F77F5C761C3212E5008D3AA9 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
 		F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DefaultViewController.storyboard; sourceTree = "<group>"; };
+		F79885F91C3E308C00C0F870 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		F79885FA1C3E308C00C0F870 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		F79885FC1C3E33E200C0F870 /* commonDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commonDao.h; sourceTree = "<group>"; };
+		F79885FD1C3E33E200C0F870 /* commonDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commonDao.m; sourceTree = "<group>"; };
 		F7A5EF1E1C30C7E500510491 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7A5EF1F1C30C7E500510491 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7A5EF211C30C7F400510491 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -1911,7 +1917,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38E1A3F1C227D7F00C57481 /* libz.tbd in Frameworks */,
-				B2EF7A5973F6634C3FA9E1A5 /* Pods.framework in Frameworks */,
+				05322FE610F43DEC83204736 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1935,7 +1941,7 @@
 		64E9D4E5F8206B8F44AA1637 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF7688197CA9A3F1A9BFD5E3 /* Pods.framework */,
+				0CCB341B51A86E7BD0F388B6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2024,6 +2030,7 @@
 		D3A9F3E01C219D1F0079DBD4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F79885F81C3E304500C0F870 /* fmdb */,
 				F7A5EF981C311C0F00510491 /* ResultModel */,
 				F7A5EF1D1C30C6E600510491 /* viewModel */,
 				F7A5EF1A1C30C69700510491 /* model */,
@@ -3063,6 +3070,17 @@
 				F77F5C7D1C321336008D3AA9 /* DefaultViewController.storyboard */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F79885F81C3E304500C0F870 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				F79885F91C3E308C00C0F870 /* DBHelper.h */,
+				F79885FA1C3E308C00C0F870 /* DBHelper.m */,
+				F79885FC1C3E33E200C0F870 /* commonDao.h */,
+				F79885FD1C3E33E200C0F870 /* commonDao.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		F7A5EF051C30C56F00510491 /* Categories（类目） */ = {
@@ -4419,10 +4437,12 @@
 				D3A9F3AF1C219C420079DBD4 /* main.m in Sources */,
 				F77F5C781C3212E5008D3AA9 /* SignInController.m in Sources */,
 				F7A5EF9B1C311C5B00510491 /* PageModel.m in Sources */,
+				F79885FE1C3E33E200C0F870 /* commonDao.m in Sources */,
 				FF060ADA1C340C2A00B32C72 /* DrugCell.m in Sources */,
 				F7A5EF6A1C30DB9E00510491 /* ManagerEvent.m in Sources */,
 				F77F5C791C3212E5008D3AA9 /* SignUpController.m in Sources */,
 				F7A5EF481C30CFB400510491 /* MineController.m in Sources */,
+				F79885FB1C3E308C00C0F870 /* DBHelper.m in Sources */,
 				F7A5EF671C30DB8300510491 /* ManagerCallBack.m in Sources */,
 				F7A5EF4D1C30D0B400510491 /* HomeController.m in Sources */,
 				F7A5EF501C30D9FF00510491 /* AppSetting.m in Sources */,
